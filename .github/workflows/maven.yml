@@ -25,5 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: tomcatdeployment
-      run: curl -v -u admin:admin -T /home/runner/work/petclinicproject/petclinicproject/target/spring-petclinic-4.2.war 'http://ec2-3-129-68-64.us-east-2.compute.amazonaws.com:8080//manager/text/deploy?path=/petclinic'
     
